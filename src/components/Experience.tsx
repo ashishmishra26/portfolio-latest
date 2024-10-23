@@ -2,52 +2,53 @@ import { motion } from 'framer-motion';
 import { Building2, Calendar, ExternalLink } from 'lucide-react';
 
 const experiences = [
-  {
-    company: "Tech Giant Corp",
-    position: "Senior Software Engineer",
-    period: "2022 - Present",
-    description: "Led development of cloud-native applications serving millions of users. Implemented microservices architecture reducing system latency by 40%.",
-    technologies: ["React", "Node.js", "AWS", "Kubernetes"],
-    logo: "https://images.unsplash.com/photo-1496200186974-4293800e2c20?auto=format&fit=crop&q=80&w=100&h=100",
-    website: "https://techgiantcorp.com"
-  },
-  {
-    company: "Innovation Labs",
-    position: "Full Stack Developer",
-    period: "2020 - 2022",
-    description: "Architected and built scalable e-commerce platforms. Mentored junior developers and implemented CI/CD pipelines.",
-    technologies: ["Vue.js", "Python", "Docker", "PostgreSQL"],
-    logo: "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&q=80&w=100&h=100",
-    website: "https://innovationlabs.com"
-  },
-  {
-    company: "Digital Solutions Inc",
-    position: "Software Developer",
-    period: "2018 - 2020",
-    description: "Developed and maintained multiple client-facing web applications. Reduced load times by 60% through optimization.",
-    technologies: ["Angular", "Java", "Spring Boot", "MongoDB"],
-    logo: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=100&h=100",
-    website: "https://digitalsolutions.com"
-  },
-  {
-    company: "StartUp Ventures",
-    position: "Frontend Developer",
-    period: "2017 - 2018",
-    description: "Built responsive web applications from scratch. Implemented modern UI/UX practices increasing user engagement by 45%.",
-    technologies: ["React", "Redux", "SASS", "Firebase"],
-    logo: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=100&h=100",
-    website: "https://startupventures.com"
-  },
-  {
-    company: "Tech Solutions Ltd",
-    position: "Junior Developer",
-    period: "2016 - 2017",
-    description: "Developed and maintained company website and internal tools. Collaborated with design team on UI improvements.",
-    technologies: ["JavaScript", "PHP", "MySQL", "Bootstrap"],
-    logo: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=100&h=100",
-    website: "https://techsolutions.com"
-  }
-];
+    {
+      company: "Kisi",
+      position: "Senior Software Engineer",
+      period: "2023 - Present",
+      description: "Led the development of interactive analytics, doubling subscription uptake. Improved page load times by 15% using caching strategies.",
+      technologies: ["React", "TypeScript", "React Query", "GCP", "Terraform"],
+      logo: "https://images.unsplash.com/photo-1496200186974-4293800e2c20?auto=format&fit=crop&q=80&w=100&h=100",
+      website: "https://getkisi.com"
+    },
+    {
+      company: "Gojek",
+      position: "Senior Software Engineer",
+      period: "2021 - 2023",
+      description: "Built an event analytics platform projected to save $3 million annually. Reduced UI bugs by 40% through a migration to TypeScript.",
+      technologies: ["React", "JavaScript", "TypeScript"],
+      logo: "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&q=80&w=100&h=100",
+      website: "https://www.gojek.com"
+    },
+    {
+      company: "Zeta",
+      position: "Software Development Engineer II",
+      period: "2021 - 2021",
+      description: "Enhanced user customization features and led the migration to a Vue.js-based theming engine.",
+      technologies: ["Vue.js", "JavaScript", "Node.js", "PostgreSQL"],
+      logo: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=100&h=100",
+      website: "https://www.zeta.tech/in/"
+    },
+    {
+      company: "smallcase",
+      position: "Frontend Developer",
+      period: "2019 - 2021",
+      description: "Redesigned the landing page, increasing engagement by 50%. Reduced page load times by 30%.",
+      technologies: ["React", "JavaScript", "Redux", "SASS"],
+      logo: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=100&h=100",
+      website: "https://smallcase.com"
+    },
+    {
+      company: "FusionCharts",
+      position: "Software Engineer",
+      period: "2017 - 2019",
+      description: "Developed interactive data visualizations, migrated charts frm ES5 to ES6",
+      technologies: ["JavaScript", "HTML5", "CSS3", "Bootstrap"],
+      logo: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=100&h=100",
+      website: "https://fusioncharts.com"
+    }
+  ];
+  
 
 export const Experience = () => {
   return (

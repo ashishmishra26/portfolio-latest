@@ -3,28 +3,20 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A modern e-commerce platform built with Next.js and Stripe',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=500',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    tags: ['React', 'Next.js', 'Stripe', 'Tailwind']
+    title: 'Clickstream Web',
+    description: 'A real-time event analytics system built for Gojek, handling millions of data points daily to provide insights and reduce third-party dependencies.',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800&h=500',
+    github: 'https://github.com/gojek/clickstream-web',
+    live: 'https://gojek.com',
+    tags: ['JavaScript', 'Node.js', 'TypeScript', 'Protobuff']
   },
   {
-    title: 'Project Two',
-    description: 'AI-powered content management system',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800&h=500',
+    title: 'smallcase Landing Page',
+    description: 'A high-performance landing page built with Next.js, reducing bounce rate and improving engagement.',
+    image: 'https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&q=80&w=800&h=500',
     github: 'https://github.com',
-    live: 'https://example.com',
-    tags: ['TypeScript', 'Node.js', 'OpenAI', 'MongoDB']
-  },
-  {
-    title: 'Project Three',
-    description: 'Real-time collaboration platform for remote teams',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800&h=500',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    tags: ['React', 'Socket.io', 'Express', 'PostgreSQL']
+    live: 'https://smallcase.com',
+    tags: ['Next', 'JavaScript']
   }
 ];
 

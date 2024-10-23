@@ -16,13 +16,13 @@ export const Header = () => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
           >
-            JD
+            AM
           </motion.div>
           <div className="flex items-center gap-6">
-            <SocialLink href="https://github.com" icon={<Github className="w-5 h-5" />} />
-            <SocialLink href="https://linkedin.com" icon={<Linkedin className="w-5 h-5" />} />
-            <SocialLink href="https://twitter.com" icon={<Twitter className="w-5 h-5" />} />
-            <SocialLink href="mailto:your@email.com" icon={<Mail className="w-5 h-5" />} />
+            <SocialLink href="https://github.com/ashishmishra26" icon={<Github className="w-5 h-5" />} />
+            <SocialLink href="https://linkedin.com/in/ashishmishraio" icon={<Linkedin className="w-5 h-5" />} />
+            <SocialLink href="https://x.com/ashishmishra_io" icon={<Twitter className="w-5 h-5" />} />
+            <SocialLink href="mailto:b.s.ashish26@gmail.com" icon={<Mail className="w-5 h-5" />} />
             <ThemeToggle />
           </div>
         </div>
