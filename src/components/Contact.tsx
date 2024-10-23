@@ -34,7 +34,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white">Email</h3>
-                  <p className="mt-1 text-gray-600 dark:text-gray-300">b.s.ashish26@gmail.com</p>
+                  <p className="text-gray-600 dark:text-gray-300">b.s.ashish26@gmail.com</p>
                 </div>
               </div>
 
@@ -46,7 +46,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white">Phone</h3>
-                  <p className="mt-1 text-gray-600 dark:text-gray-300">+91-903876860</p>
+                  <p className="text-gray-600 dark:text-gray-300">+91-903876860</p>
                 </div>
               </div>
 
@@ -58,7 +58,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white">Location</h3>
-                  <p className="mt-1 text-gray-600 dark:text-gray-300">Bengaluru, India</p>
+                  <p className="text-gray-600 dark:text-gray-300">Bengaluru, India</p>
                 </div>
               </div>
             </div>
@@ -70,43 +70,61 @@ export const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <form className="space-y-6">
+            <form
+              className="space-y-6"
+              onSubmit={(e) => {
+              e.preventDefault();
+                const formData = new FormData(e.target as HTMLFormElement);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const message = formData.get('message');
+                const mailtoLink = `mailto:b.s.ashish26@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(name as string)}%0AEmail:%20${encodeURIComponent(email as string)}%0AMessage:%20${encodeURIComponent(message as string)}`;
+                window.location.href = mailtoLink;
+              }}
+            >
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm focus:border-purple-500 focus:ring-purple-500"
-                />
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="mt-1 p-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm focus:border-purple-500 focus:ring-purple-500"
+                required
+              />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm focus:border-purple-500 focus:ring-purple-500"
-                />
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="mt-1 p-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm focus:border-purple-500 focus:ring-purple-500"
+                required
+              />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm focus:border-purple-500 focus:ring-purple-500"
-                ></textarea>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                className="mt-1 p-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm focus:border-purple-500 focus:ring-purple-500"
+                required
+              ></textarea>
               </div>
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-medium"
+              type="submit"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="w-full px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-medium"
               >
-                Send Message
+              Send Message
               </motion.button>
             </form>
           </motion.div>

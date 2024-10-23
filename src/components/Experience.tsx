@@ -25,7 +25,7 @@ const experiences = [
       position: "Software Development Engineer II",
       period: "2021 - 2021",
       description: "Enhanced user customization features and led the migration to a Vue.js-based theming engine.",
-      technologies: ["Vue.js", "JavaScript", "Node.js", "PostgreSQL"],
+      technologies: ["Vue.js", "JavaScript", "Node.js"],
       logo: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=100&h=100",
       website: "https://www.zeta.tech/in/"
     },
@@ -43,7 +43,7 @@ const experiences = [
       position: "Software Engineer",
       period: "2017 - 2019",
       description: "Developed interactive data visualizations, migrated charts frm ES5 to ES6",
-      technologies: ["JavaScript", "HTML5", "CSS3", "Bootstrap"],
+      technologies: ["JavaScript", "React", "HTML5", "CSS3", "Bootstrap"],
       logo: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=100&h=100",
       website: "https://fusioncharts.com"
     }

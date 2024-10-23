@@ -17,6 +17,22 @@ const projects = [
     github: 'https://github.com',
     live: 'https://smallcase.com',
     tags: ['Next', 'JavaScript']
+  },
+  {
+      title: 'Data Story - 1',
+      description: 'Clean Water Access around the World',
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800&h=500',
+      github: 'https://github.com',
+      live: 'https://www.fusioncharts.com/demos/datastories/clean-water-access-around-the-world/',
+      tags: ['JavaScript', 'CSS']
+  },
+  {
+    title: 'Data Story - 2',
+    description: 'How Americans Die',
+    image: 'https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&q=80&w=800&h=500',
+    github: 'https://github.com',
+    live: 'https://www.fusioncharts.com/demos/datastories/how-americans-die/',
+    tags: ['JavaScript', 'CSS']
   }
 ];
 

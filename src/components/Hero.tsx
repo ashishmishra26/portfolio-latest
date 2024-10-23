@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
+import { ArrowDown } from 'lucide-react';
 
 export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <div className="text-center relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -61,11 +62,12 @@ export const Hero = () => {
             </motion.button>
           </motion.div>
 
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            className="absolute left-1/2 transform -translate-x-1/2"
+            style={{ bottom: '-10rem' }}
           >
             <motion.div
               animate={{ y: [0, 10, 0] }}
@@ -73,7 +75,7 @@ export const Hero = () => {
             >
               <ArrowDown className="w-6 h-6 text-gray-400 dark:text-gray-500" />
             </motion.div>
-          </motion.div> */}
+          </motion.div>
         </div>
       </div>
     </section>
